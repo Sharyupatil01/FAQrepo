@@ -1,0 +1,45 @@
+body 
+{
+
+    background-color: rgb(255,215,255);
+    padding:40px;
+    font-size:1.5rem;
+    font-family: Geneva, Tahoma, sans-serif;
+    line-height:1.6rem;
+
+}
+.accordian
+{
+
+    background-color: white;
+    padding:4px 16px;
+    margin-bottom:16px;
+    border-radius:7px;
+    box-shadow:1px 1px 5px rgb(37, 25, 27);
+    cursor:pointer;
+
+}
+.question
+{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+
+}
+.icon
+{
+    margin-right:16px;
+    transition: transform 0.2s;
+}
+.answer
+{
+    color:#5a5656;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s;
+}
+
+.icon.active{
+    transform:rotate(-180deg); 
+  }
